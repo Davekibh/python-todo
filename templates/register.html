@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Register</h1>
+<form action="/register" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Choose a username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Choose a password" required>
+    <button type="submit">Register</button>
+</form>
+<p>Already have an account? <a href="/login">Login here</a>.</p>
+{% endblock %}
